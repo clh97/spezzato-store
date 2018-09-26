@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Spezzato</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="info-bar">
+
+    <img class="info-bar__find-icon" src="img/Find-Icon.png" alt="">
+    <a class="info-bar__stores" href="#">nossas lojas</a>
+
+    <div class="info-bar__separator"></div>
+
+    <img class="info-bar__tel-icon" src="img/Phone.png" alt="">
+    <a class="info-bar__phone" href="#">11 3074-2922</a>
+  </div>
+
+  <!-- NAVIGATION BAR -->
+  <nav>
+    <div class="nav__hamburger">
+    </div>
+
+    <div class="nav__menu">
+      <ul class="nav__menu__navigation">
+        <li class="navigation__item">
+          <a href="#link-perfil#"><img src="img/002-avatar.png" alt=""></a>
+        </li>
+        <li class="navigation__item">
+          <a href="#link-spezzato-teen#"><img class="navigation__item__spezzato-teen" src="img/Spezzato-Teen.png" alt=""></a>
+        </li>
+      </ul>
+      <ul class="nav__menu__categories">
+          <li class="category category--expandable">
+              <span class="category__title">Roupas</span>
+              <div class="category__arrow"></div>
+              <ul class="category__submenu">
+                <li>
+                  <a href="http://www.spezzato.com.br/roupas/tops.html">
+                  <span>Blusas</span>
+                  </a>
+                </li><li>
+                <a href="http://www.spezzato.com.br/roupas/calcas.html">
+                <span>Calças</span>
+                </a>
+                </li><li>
+                <a href="http://www.spezzato.com.br/roupas/saias.html">
+                <span>Saias</span>
+                </a>
+                </li><li>
+                <a href="http://www.spezzato.com.br/roupas/vestidos.html">
+                <span>Vestidos</span>
+                </a>
+                </li><li>
+                <a href="http://www.spezzato.com.br/roupas/macac-o.html">
+                <span>Macacão</span>
+                </a>
+                </li>
+              </ul>
+          </li>
+          <li class="category category--expandable">
+              <span class="category__title">Acessórios</span>
+              <div class="category__arrow"></div>
+              <ul class="category__submenu">
+                <li>
+                  <a href="http://www.spezzato.com.br/acessorios/bijoux.html">
+                  <span>Bijoux</span>
+                  </a>
+                </li>
+                <li >
+                  <a href="http://www.spezzato.com.br/acessorios/bolsas.html">
+                  <span>Bolsas </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="http://www.spezzato.com.br/acessorios/cinto.html">
+                  <span>Cintos</span>
+                  </a>
+                </li>
+              </ul>
+          </li>
+          <li class="category">
+              <a href="http://www.spezzato.com.br/sapatos.html">
+                <span class="category__title">Sapatos</span>
+              </a>
+          </li>
+          <li class="category category--expandable">
+              <span class="category__title">Sale</span>
+              <div class="category__arrow"></div>
+              <ul class="category__submenu">
+                <li>
+                <a href="http://www.spezzato.com.br/sale/roupas.html">
+                <span>Roupas</span>
+                </a>
+                </li><li>
+                <a href="http://www.spezzato.com.br/sale/acessorios.html">
+                <span>Acessórios</span>
+                </a>
+                </li><li>
+                <a href="http://www.spezzato.com.br/sale/sapatos.html">
+                <span>Sapatos</span>
+                </a>
+                </li>
+              </ul>
+          </li>
+          <li class="category">
+              <a href="http://www.spezzato.com.br/lojas.html">
+                <span class="category__title">Lojas</span>
+              </a>
+          </li>
+      </ul>
+      <ul class="nav__menu__social-media">
+        <li class="social-media__item">
+          <a href="#link-instagram#"><img src="img/001-instagram.png" alt="instagram"></a>
+        </li>
+        <li class="social-media__item">
+          <a href="#link-facebook#"><img src="img/004-facebook.png" alt="facebook"></a>
+        </li>
+        <li class="social-media__item">
+          <a href="#link-twitter#"><img src="img/005-twitter-logo-silhouette.png" alt="twitter"></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="nav__logo">
+      <a class="nav__logo__home" href="#">
+        <img class="nav__logo__img" src="img/spezzato-b.png" alt="">
+      </a>
+    </div>
+
+    <div class="nav__buttons">
+      <a href="#" class="nav__buttons__cart">
+        <img class="nav__buttons_btn-search" src="img/Search-02.png" alt="">
+        <img class="nav__buttons_btn-bag" src="img/Bag.png" alt="">
+      </a>
+      <a href="#" class="nav__buttons__search">
+      </a>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-container main--no-banner">
+
+    <span class="main__breadcrumbs">
+      início / campanhas / nome_campanha
+    </span>
+
+    <div class="main__filter">
+      <strong>ordenar:</strong>
+      <select class="main__filter__select" name="order" id="order">
+        <option value="popularity">popularidade</option>
+        <option value="price">preço</option>
+      </select>
+      <div class="main__filter__pages">
+        <a href="#" class="pages__page pages__page--selected">1</a>
+        <a href="#" class="pages__page">2</a>
+        <a href="#" class="pages__page">3</a>
+      </div>
+    </div>
+
+    <div class="main__products">
+      <a href="#" class="main__products__product">
+        <img src="http://placehold.it/512x512" alt="" class="product__image">
+        <h4 class="product__title">roupa</h4>
+        <h4 class="product__price">R$XXX,xx</h4>
+      </a>
+     <a href="#" class="main__products__product">
+        <img src="http://placehold.it/512x512" alt="" class="product__image">
+        <h4 class="product__title">roupa</h4>
+        <h4 class="product__price">R$XXX,xx</h4>
+      </a>
+     <a href="#" class="main__products__product">
+        <img src="http://placehold.it/512x512" alt="" class="product__image">
+        <h4 class="product__title">roupa</h4>
+        <h4 class="product__price">R$XXX,xx</h4>
+      </a>
+     <a href="#" class="main__products__product">
+        <img src="http://placehold.it/512x512" alt="" class="product__image">
+        <h4 class="product__title">roupa</h4>
+        <h4 class="product__price">R$XXX,xx</h4>
+      </a>
+     <a href="#" class="main__products__product">
+        <img src="http://placehold.it/512x512" alt="" class="product__image">
+        <h4 class="product__title">roupa</h4>
+        <h4 class="product__price">R$XXX,xx</h4>
+      </a>
+     <a href="#" class="main__products__product">
+        <img src="http://placehold.it/512x512" alt="" class="product__image">
+        <h4 class="product__title">roupa</h4>
+        <h4 class="product__price">R$XXX,xx</h4>
+      </a>
+    </div>
+
+    <div class="main__pages">
+      <a href="#" class="pages__page pages__page--selected">1</a>
+      <a href="#" class="pages__page">2</a>
+      <a href="#" class="pages__page">3</a>
+    </div>
+
+    <section class="banner banner--conditions">
+      <div class="banner__condition">
+        <h3 class="banner__condition__title">
+          frete grátis
+        </h3>
+        <p class="banner__condition__description">
+          Em todas compras acima de R$500,00
+        </p>
+      </div>
+      <div class="banner__condition">
+        <h3 class="banner__condition__title">
+          trocas e devoluções
+        </h3>
+        <p class="banner__condition__description">
+          Trocas ou devoluções grátis (em até 30 dias)
+        </p>
+      </div>
+      <div class="banner__condition">
+        <h3 class="banner__condition__title">
+          tudo em até 6x sem juros
+        </h3>
+        <p class="banner__condition__description">
+          Parcele qualquer valor em até 6x
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <ul class="footer__list">
+      <li class="footer__list__item"><a href="#" class="item__link">central de atendimento</a></li>
+      <li class="footer__list__item"><a href="#" class="item__link">meus pedidos</a></li>
+      <li class="footer__list__item"><a href="#" class="item__link">trocas e devoluções</a></li>
+      <li class="footer__list__item"><a href="#" class="item__link">prazos de entrega</a></li>
+      <li class="footer__list__item"><a href="#" class="item__link">pagamentos</a></li>
+      <li class="footer__list__item"><a href="#" class="item__link">lojas</a></li>
+      <li class="footer__list__item"><a href="#" class="item__link">multimarcas / showroom</a></li>
+    </ul>
+
+    <div class="footer__copyright">
+        <span class="footer__copyright__text-block">Copyright © Spezzato 2017</span>
+        <span class="footer__copyright__text-block">Todos os direitos reservados.</span>
+        <span class="footer__copyright__text-block">CNPJ: 55.809.172/0001-00</span>
+        <span class="footer__copyright__text-block">Rua Doutor Alceu de Campos Rodrigues 268</span>
+        <span class="footer__copyright__text-block">Vila Nova Conceição - São Paulo - SP</span>
+        <span class="footer__copyright__text-block">04544-000 - Tel: (11) 3074-2922</span>
+    </div>
+  </footer>
+  
+</body>
+<script src="js/index.js"></script>
+</html>
